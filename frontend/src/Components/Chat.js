@@ -31,7 +31,7 @@ function Chat() {
 
   useEffect(() => {
     const deployedUrl = "https://chatapp978.herokuapp.com/";
-    const localUrl = "http://localhost:3001";
+    //const localUrl = "http://localhost:3001";
 
     socket = io(deployedUrl);
 

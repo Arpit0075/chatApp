@@ -9,7 +9,7 @@ function SavedChat() {
   // eslint-disable-next-line
   useEffect(async () => {
     const deployedUrl = "https://chatapp978.herokuapp.com/chats/getChats";
-    const localUrl = "http://localhost:3001/chats/getChats";
+    //const localUrl = "http://localhost:3001/chats/getChats";
 
     const res = await axios.get(deployedUrl, {
       headers: { token: localStorage.getItem("token") },
