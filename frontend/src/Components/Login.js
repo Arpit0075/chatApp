@@ -23,8 +23,9 @@ function Login() {
     //console.log(login);
 
     try {
-      const localUrl = "http://localhost:3001/users/login";
-      const res = await axios.post(localUrl, {
+      const deployedUrl = "https://chatapp978.herokuapp.com/users/login";
+      //const localUrl = "http://localhost:3001/users/login";
+      const res = await axios.post(deployedUrl, {
         email: login.email,
         password: login.password,
       });

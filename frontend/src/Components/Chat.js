@@ -18,8 +18,10 @@ function Chat() {
 
   const send = async () => {
     const message = document.getElementById("chatInput").value;
+    const deployedUrl = "https://chatapp978.herokuapp.com/chats/postChat";
+
     await axios.post(
-      "http://localhost:3001/chats/postChat",
+      deployedUrl,
       { userName: decoded.user.name, message: message },
       { headers: { token: localStorage.getItem("token") } }
     );
@@ -28,7 +30,10 @@ function Chat() {
   };
 
   useEffect(() => {
-    socket = io("http://localhost:3001");
+    const deployedUrl = "https://chatapp978.herokuapp.com/";
+    const localUrl = "http://localhost:3001";
+
+    socket = io(deployedUrl);
 
     socket.on("connect", () => {
       alert("connected");

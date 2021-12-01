@@ -22,8 +22,10 @@ function Register() {
     e.preventDefault();
     //console.log(register);
     try {
-      const localUrl = "http://localhost:3001/users/register";
-      const res = await axios.post(localUrl, {
+      const deployedUrl = "https://chatapp978.herokuapp.com/users/register";
+      //const localUrl = "http://localhost:3001/users/register";
+
+      const res = await axios.post(deployedUrl, {
         name: register.name,
         email: register.email,
         password: register.password,

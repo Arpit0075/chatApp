@@ -8,7 +8,10 @@ function SavedChat() {
 
   // eslint-disable-next-line
   useEffect(async () => {
-    const res = await axios.get("http://localhost:3001/chats/getChats", {
+    const deployedUrl = "https://chatapp978.herokuapp.com/chats/getChats";
+    const localUrl = "http://localhost:3001/chats/getChats";
+
+    const res = await axios.get(deployedUrl, {
       headers: { token: localStorage.getItem("token") },
     });
 
@@ -21,13 +24,15 @@ function SavedChat() {
       <Link to="/livechat"> Live Chat </Link>
 
       <div className="container">
-        {savedMessages.map((item, i) => {
-          return (
-            <div className="item">
-              {item.userName}: {item.message}
-            </div>
-          );
-        })}
+        {savedMessages.length === 0 ? <h1>No chats!</h1> : null}
+        {savedMessages &&
+          savedMessages.map((item, i) => {
+            return (
+              <div className="item">
+                {item.userName}: {item.message}
+              </div>
+            );
+          })}
       </div>
     </div>
   );
