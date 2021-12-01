@@ -3,6 +3,10 @@ This app is using MERN Stack with socket.io for instant data transmission for ch
 
 Here are the end ponts for the backend:
 
-get, "/" , it gives us the welcome message.
-post, "/users/register" , it is the end point for user registeration
-post, "/users/login" , it is the end point for user login
+get, "https://chatapp978.herokuapp.com/" , it gives us the welcome message.
+post, "https://chatapp978.herokuapp.com/users/register" , it is the end point for user registeration
+post, "https://chatapp978.herokuapp.com/users/login" , it is the end point for user login
+
+These are protected routes:
+get, "https://chatapp978.herokuapp.com/chats/getChats" , it gives us all chat messages
+post, "https://chatapp978.herokuapp.com/chats/postChat , it allows us to save chat messages
