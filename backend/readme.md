@@ -10,3 +10,12 @@ post, "https://chatapp978.herokuapp.com/users/login" , it is the end point for u
 These are protected routes:
 get, "https://chatapp978.herokuapp.com/chats/getChats" , it gives us all chat messages
 post, "https://chatapp978.herokuapp.com/chats/postChat , it allows us to save chat messages
+
+Sample users I created for testing :
+name: Fizz
+email: fizz@gmail.com
+password: 123
+
+name: Trynd
+email: trynd@gmail.com
+password: 1234
