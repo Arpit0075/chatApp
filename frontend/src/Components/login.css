@@ -1,0 +1,48 @@
+.login {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.login > form {
+  width: 80%;
+  background-color: darkblue;
+  padding: 2rem;
+  margin-top: 2.5rem;
+}
+
+.login > form > h2 {
+  color: white;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.login > form > h1 {
+  color: white;
+  text-align: center;
+}
+
+.login > form > input {
+  display: block;
+  padding: 0.5rem;
+  margin: 1.5rem;
+  width: 95%;
+}
+.login > form > Button {
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+  background-color: orchid;
+}
+
+.login > form > a {
+  color: white;
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+  background-color: orchid;
+}

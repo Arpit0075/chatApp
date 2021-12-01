@@ -1,0 +1,42 @@
+.register {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.register > form {
+  width: 80%;
+  background-color: darkblue;
+  padding: 2rem;
+  margin-top: 2.5rem;
+}
+
+.register > form > h2 {
+  color: white;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.register > form > h1 {
+  color: white;
+  text-align: center;
+}
+.register > form > h1 > a {
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: none;
+}
+
+.register > form > input {
+  display: block;
+  padding: 0.5rem;
+  margin: 1.5rem;
+  width: 95%;
+}
+.register > form > Button {
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+  background-color: orchid;
+}

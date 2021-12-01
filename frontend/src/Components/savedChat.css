@@ -1,0 +1,14 @@
+.savedChat {
+  padding: 2rem;
+}
+.container {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.836);
+  color: white;
+  border-radius: 1rem;
+}
+.item {
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
