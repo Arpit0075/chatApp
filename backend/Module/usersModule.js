@@ -6,7 +6,7 @@ require("dotenv").config();
 module.exports.register = async (req, res) => {
   try {
     const user = await User.findOne({ email: req.body.email });
-    if (user) return res.send("user already exist");
+    if (user) return res.send({ message: "User already exists" });
 
     //create new user
 

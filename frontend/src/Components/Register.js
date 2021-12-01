@@ -36,6 +36,8 @@ function Register() {
           setMessage("");
         }, 3000);
       } else {
+        //in case of error from backend
+        //console.log(res);
         setMessage(res.data);
         setTimeout(() => {
           setMessage("");

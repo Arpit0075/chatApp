@@ -25,21 +25,25 @@ function Login() {
     try {
       const deployedUrl = "https://chatapp978.herokuapp.com/users/login";
       //const localUrl = "http://localhost:3001/users/login";
+
       const res = await axios.post(deployedUrl, {
         email: login.email,
         password: login.password,
       });
 
-      setMessage(res.data.message);
-      setTimeout(() => {
-        setMessage("");
-      }, 3000);
-      setLogin({ ...login, email: "", password: "" });
+      if (res.data.message) {
+        setMessage(res.data.message);
+        setTimeout(() => {
+          setMessage("");
+        }, 3000);
+        setLogin({ ...login, email: "", password: "" });
+      }
 
-      console.log(res);
+      //console.log(res);
       if (res.data.token) {
         localStorage.setItem("token", res.data.token);
         navigate("/liveChat");
+        setLogin({ ...login, email: "", password: "" });
       }
     } catch (err) {
       console.log(err);
