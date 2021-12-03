@@ -53,7 +53,7 @@ function Register() {
     <div className="register">
       <form className="form" onSubmit={handleSubmit}>
         <h1>
-          <Link to="/"> Chat Application </Link>
+          <Link to="/"> Chat Application -Home</Link>
         </h1>
         <h2>Register</h2>
         <input

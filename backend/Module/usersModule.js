@@ -27,6 +27,10 @@ module.exports.register = async (req, res) => {
 };
 
 module.exports.login = async (req, res) => {
+  //if field is empty
+  if (req.body.email === "" || req.body.password === "")
+    return res.send({ message: "email and password required!" });
+
   //checking email if exists
   const user = await User.findOne({ email: req.body.email });
   if (!user) return res.send({ message: "email not registered" });

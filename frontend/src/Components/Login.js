@@ -53,7 +53,7 @@ function Login() {
   return (
     <div className="login">
       <form className="form" onSubmit={handleSubmit}>
-        <h1>Chat Application</h1>
+        <h1>Chat Application-Home</h1>
         <h2>Login</h2>
         <input
           type="email"
