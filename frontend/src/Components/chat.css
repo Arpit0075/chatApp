@@ -1,5 +1,5 @@
 .chatPage {
-  background-color: rgb(31, 29, 29);
+  background-color: rgb(56, 54, 54);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -14,7 +14,7 @@
   width: 50%;
 }
 .header {
-  background-color: crimson;
+  background-color: rgb(57, 17, 150);
   padding: 1rem;
   height: 15%;
   box-sizing: border-box;
@@ -47,7 +47,7 @@
 }
 
 .sendBtn {
-  background-color: crimson;
+  background-color: rgb(57, 17, 150);
   color: white;
   border: none;
   width: 20%;
